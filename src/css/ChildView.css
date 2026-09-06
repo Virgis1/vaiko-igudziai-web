@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+header {
+  background: #003d59;
+  background: linear-gradient(180deg, rgba(0, 61, 89, 1) 0%, rgba(0, 136, 199, 1) 50%);
+  height: 15vh;
+  border-bottom: 10px solid #1375AD;
+}
+
+.header_title {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.child-main {
+  height: 85vh;
+  background: RGBA(0, 61, 89, 1);
+  background: linear-gradient(180deg, rgba(0, 61, 89, 1) 0%, rgba(0, 136, 199, 1) 70%);
+}
+
+.info-box {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-box__name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+main h4 {
+  color: #ff1a1a
+}

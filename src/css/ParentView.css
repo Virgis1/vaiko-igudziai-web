@@ -1,0 +1,24 @@
+.parent-view-layout {
+  height: 100vh;
+  margin: 0;
+}
+
+.parent-view-layout section {
+  background-color: #cc6600;
+}
+
+.parent-view-layout article {
+  background: RGBA(0, 61, 89, 1);
+  background: linear-gradient(180deg, rgba(0, 61, 89, 1) 0%, rgba(0, 136, 199, 1) 70%);;
+}
+
+.parent-view-layout button {
+  background-color: #ffb366;
+  border: none;
+  color: black;
+}
+
+.parent-view-layout button:hover {
+  background-color: #ff8c1a;
+  color: black;
+}
