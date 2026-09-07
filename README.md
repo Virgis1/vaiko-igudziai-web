@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# Vaiko įgūdžiai – Web
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Parent web application for the **Vaiko įgūdžiai** family task and reward system.
 
-## Available Scripts
+This application is used by parents to manage their children's tasks and rewards, approve completed tasks, and keep track of points and activity.
 
-In the project directory, you can run:
+It is one part of the Vaiko įgūdžiai project, together with a mobile application for children and a FastAPI backend.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Parents can:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- create an account and log in
+- add multiple children
+- create and delete tasks
+- assign points to tasks
+- create and delete rewards
+- set the point cost of rewards
+- approve or reject completed tasks
+- confirm claimed rewards
+- see each child's current point balance
+- view activity history
+- generate a connection code for the child's mobile app
 
-### `npm test`
+The interface is responsive and can be used on both desktop and mobile devices.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech stack
 
-### `npm run build`
+- React
+- JavaScript
+- Axios
+- Bootstrap
+- React Router
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The web application communicates with the FastAPI backend through a REST API.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Parent authentication is handled using JWT tokens.
 
-### `npm run eject`
+## Running locally
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Install dependencies:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Start the development server:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+npm start
+```
 
-## Learn More
+Create a production build:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Production
 
-### Code Splitting
+The production version is hosted on my Raspberry Pi and exposed over HTTPS using Cloudflare Tunnel.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Live application:
 
-### Analyzing the Bundle Size
+**https://vaikoigudziai.lt**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Related repositories
 
-### Making a Progressive Web App
+This repository is part of the **Vaiko įgūdžiai** project:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Main project – `vaiko-igudziai`
+- Backend API – `vaiko-igudziai-backend`
+- Child mobile app – `vaiko-igudziai-mobile`
